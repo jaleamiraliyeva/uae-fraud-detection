@@ -1,0 +1,5 @@
+data/ 
+model/ 
+presentation/*.pbix 
+__pycache__/ 
+*.pyc 

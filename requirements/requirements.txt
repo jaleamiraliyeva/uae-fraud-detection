@@ -1,0 +1,12 @@
+cloudpickle
+joblib
+lightgbm
+matplotlib
+numpy
+optuna
+pandas
+psycopg2-binary
+scikit-learn
+seaborn
+shap
+xgboost
