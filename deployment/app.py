@@ -228,7 +228,8 @@ except FileNotFoundError:
 # ══════════════════════════════════════════════════════════════
 @st.cache_data
 def load_test_data():
-    df = pd.read_csv(r"..\data\uae_ecom_fraud_100k.csv")
+    data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "uae_ecom_fraud_100k.csv")
+    df = pd.read_csv(data_path)
     X = df.drop(columns=['is_fraud'])
     y = df['is_fraud']
     _, X_test, _, y_test = train_test_split(
