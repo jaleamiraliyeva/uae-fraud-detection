@@ -10,3 +10,4 @@ scikit-learn
 seaborn
 shap
 xgboost
+streamlit 
