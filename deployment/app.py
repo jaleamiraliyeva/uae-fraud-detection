@@ -208,9 +208,8 @@ st.caption("Logistic Regression · Tuned with GridSearchCV · uae_ecom_fraud_100
 # Load Model  (saved as fraud_model2.pkl in notebook cell 51)
 # ══════════════════════════════════════════════════════════════
 def load_model():
-    model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model", "fraud_model8.pkl")
+    model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "model", "fraud_model8.pkl")
     return joblib.load(model_path)
-
 try:
     pipe = load_model()
 except FileNotFoundError:
